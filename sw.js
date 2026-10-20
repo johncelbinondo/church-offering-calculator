@@ -1,5 +1,5 @@
 // Bump CACHE when you change any file so phones fetch the new version.
-var CACHE = "offering-calc-v2";
+var CACHE = "offering-calc-v3";
 var FILES = ["./", "index.html", "style.css", "script.js", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", function (e) {
