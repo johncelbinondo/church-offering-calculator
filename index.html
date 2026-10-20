@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offering Calculator - Book of Life Assemblies of God Lutopan</title>
+  <meta name="theme-color" content="#4a2f1a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="brand">
+    <img src="icon-192.png" alt="Book of Life Assemblies of God Lutopan logo" width="64" height="64">
+    <div>
+      <h1>Book of Life Assemblies of God Lutopan</h1>
+      <p>Offering Calculator</p>
+    </div>
+  </header>
+
+  <main class="app">
+    <form id="calc-form" novalidate>
+      <label for="gross">Total Sunday offering</label>
+      <div class="amount-wrap">
+        <span class="peso">₱</span>
+        <input id="gross" type="text" inputmode="decimal" autocomplete="off" placeholder="0" aria-describedby="error">
+      </div>
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <button type="submit" id="calculate" class="btn primary">Calculate</button>
+      <button type="button" id="clear" class="btn">Clear</button>
+    </form>
+
+    <section id="results" hidden aria-live="polite">
+      <h2>Allocations</h2>
+      <div id="allocations"></div>
+      <p id="check" class="check"></p>
+
+      <h2>Working balances <small>(not allocations)</small></h2>
+      <div id="balances"></div>
+
+      <div class="actions">
+        <button type="button" id="copy" class="btn">Copy Results</button>
+      </div>
+      <p id="copy-status" class="status" role="status"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

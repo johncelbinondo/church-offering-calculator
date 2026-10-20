@@ -1,0 +1,13 @@
+{
+  "name": "Book of Life AG Lutopan - Offering Calculator",
+  "short_name": "Offering",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#efe3cb",
+  "theme_color": "#4a2f1a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
